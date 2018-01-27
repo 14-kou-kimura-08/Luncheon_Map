@@ -6,7 +6,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="shortcut icon" href="/favicon.png"/>
   </head>
+  <header>
+    <a href="/"><img src=/logo.png class="header-logo"></a>
+    <ul class="header-menus">
+      <li><%=link_to("メニューリスト","/menus") %></li>
+      <li><%=link_to("Luncheon Mapとは","/#") %></li>
+    </ul>
+  </header>
 
   <body>
     <%= yield %>
